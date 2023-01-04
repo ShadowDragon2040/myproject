@@ -16,7 +16,7 @@ Img
 } from './InfoElements'
 
 export const homeObjOne={
-  id:'about',
+  id:'products',
   lightBg:false,
   lightText:true,
   lightTextDesc:false,
@@ -30,12 +30,12 @@ export const homeObjOne={
   darkText:true,
 
 };
-const InfoSection = () => {
+const Products = () => {
   
   return (
     <>
     
-      <InfoContainer  lightBg={false} id={'about'} >
+      <InfoContainer  lightBg={false} id={'products'} >
         <Heading lightText={false}>A Cégünkről</Heading>
         <InfoWrapper>
           <InfoRow  imgStart={false} >
@@ -76,4 +76,4 @@ const InfoSection = () => {
   )
 }
 
-export default InfoSection
+export default Products

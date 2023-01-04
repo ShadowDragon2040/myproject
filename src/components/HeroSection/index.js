@@ -1,11 +1,8 @@
 import React,{useState} from 'react'
 import { Button } from '../ButtonElement'
-import Video from '../../videos/video.mp4'
 
 import { 
     HeroContainer,
-    HeroBg,
-    VideoBg,
     HeroBtnWrapped,
     HeroContent,
     HeroH1,
@@ -23,17 +20,13 @@ const HeroSection = () => {
 
   return (
     <HeroContainer>
-        <HeroBg>
-            <VideoBg autoPlay loop muted src={Video} 
-            type='video/mp4'/>
-        </HeroBg>
     <HeroContent>
-        <HeroH1>Industar kft</HeroH1>
-        <HeroP>Fém megmunkáló gyár</HeroP>
+        <HeroH1>3D Hobbinyomtatás és Tervezés</HeroH1>
+        <HeroP>Képzeld el, mi megvalósítjuk!</HeroP>
         <HeroBtnWrapped>
             <Button 
             to='signup' 
-            onMouseEnter={onHover} 
+            onMouseEnter={onHover}
             onMouseLeave={onHover}
             primary='true'
             dark='true'
