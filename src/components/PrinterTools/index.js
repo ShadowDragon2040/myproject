@@ -1,16 +1,14 @@
 import React from 'react'
-import {Button} from '../ButtonElement'
+import { useState } from 'react';
+import { Link } from 'react-router-dom';
 import {
 InfoContainer,
 InfoWrapper,
 InfoRow,
 Column1,
 Column2,
-TextWrapper,
 TopLine,
 Heading,
-Subtitle,
-BtnWrap,
 ImgWrap,
 Img
 } from './InfoElements'
@@ -31,55 +29,68 @@ export const homeObjOne={
 
 };
 const PrinterTools = () => {
-  
+  const [LeftHovered, setLeftHovered] = useState(false);
+  const [RightHovered, setRightHovered] = useState(false);
+
   return (
     <>
-    
       <InfoContainer  lightBg={false} id={'tools'} >
         <Heading lightText={false}>A nyomtatóink</Heading>
         <InfoWrapper>
           <InfoRow  imgStart={false} >
             <Column1>
-            <TopLine>Ender 3 V2</TopLine>
+            <TopLine style={{
+              position: "absolute",
+              top: "50%",
+              left: "50%",
+              transform: "translate(-50%,-50%)",
+              visibility: LeftHovered ? 'hidden' : 'visible',
+              textAlign: 'center'
+            }}>Ender 3 V2</TopLine>
             <ImgWrap>
-              <Img src={require('../../images/industar-kft-front.jpg')} alt={'cég'}/>
+            <Link to="/Ender">
+                <Img
+                  src={require('../../images/industar-kft-front.jpg')}
+                  alt={'cég'}
+                  onMouseEnter={() => setLeftHovered(true)}
+                  onMouseLeave={() => setLeftHovered(false)}
+                  style={{
+                    filter: LeftHovered ? "blur(0px)" : "blur(3px)",
+                    width: "100%",
+                    height: "auto",
+                    cursor: 'pointer',
+                    position: 'relative'
+                  }}
+                />
+              </Link>
             </ImgWrap>
-              <BtnWrap>
-                <Button to='company'
-                smooth={true}
-                duration={500}
-                spy={true}
-                exact="true"
-                offset={-80}
-                /* primary={primary? 1:0}
-                dark={dark ? 1:0} 
-                 dark2={dark2 ? 1:0} */
-                dark={true}
-                primary={true}
-                darkText={true}
-                >Bövebben</Button>
-              </BtnWrap>
             </Column1>
              <Column2>
-             <TopLine>Anycubic photon mono</TopLine>
+             <TopLine style={{
+              position: "absolute",
+              top: "50%",
+              left: "50%",
+              transform: "translate(-50%,-50%)",
+              visibility: RightHovered ? 'hidden' : 'visible',
+              textAlign: 'center'
+            }}>Anycubic photon mono</TopLine>
               <ImgWrap>
-              <Img src={require('../../images/industar-kft-front.jpg')} alt={'cég'}/>
+              <Link to="/Anycubic">
+                <Img
+                  src={require('../../images/industar-kft-front.jpg')}
+                  alt={'cég'}
+                  onMouseEnter={() => setRightHovered(true)}
+                  onMouseLeave={() => setRightHovered(false)}
+                  style={{
+                    filter: RightHovered ? "blur(0px)" : "blur(3px)",
+                    width: "100%",
+                    height: "auto",
+                    cursor: 'pointer',
+                    position: 'relative'
+                  }}
+                />
+              </Link>
               </ImgWrap>
-              <BtnWrap>
-                <Button to='company'
-                smooth={true}
-                duration={500}
-                spy={true}
-                exact="true"
-                offset={-80}
-                /* primary={primary? 1:0}
-                dark={dark ? 1:0} 
-                 dark2={dark2 ? 1:0} */
-                dark={true}
-                primary={true}
-                darkText={true}
-                >Bövebben</Button>
-              </BtnWrap>
             </Column2>
           </InfoRow>
         </InfoWrapper>

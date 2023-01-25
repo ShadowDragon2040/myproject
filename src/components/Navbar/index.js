@@ -1,9 +1,7 @@
-import React, {useEffect, useState,useRef} from 'react'
+import React, {useEffect, useState} from 'react'
 import {FaBars} from 'react-icons/fa'
 import { IconContext } from 'react-icons';
 import { animateScroll as scroll } from 'react-scroll';
-import { Dropdown } from '../Dropdown';
-import Menu from "../menu";
 
 import { 
   Nav,
@@ -36,15 +34,6 @@ const Navbar = ({toggle}) => {
   const toggleHome=()=>{
     scroll.scrollToTop();
   }
-  const dropdownRef = useRef(null); // Create a reference for dropdown container
-  const [isMenuDropDownOpen, setMenuDropDownOpen] = useState(false);
-
-  // Function to close dropdown
-  const closeHoverMenu = () => {
-    setMenuDropDownOpen(false);
-  };
-
-  Dropdown(dropdownRef, closeHoverMenu); // Call the hook 
   return (
     <>
     <IconContext.Provider value={{color:'#fff'}}>
@@ -57,62 +46,48 @@ const Navbar = ({toggle}) => {
             <NavMenu>
               <NavItem>
                 <NavLinks to='about'
-                ref={dropdownRef}
-                onMouseOver={() => setMenuDropDownOpen(true)} //use mouseover event to show dropdown
                 smooth={true} 
                 duration={500} 
                 spy={true}
                 exact='true' 
                 offset={-80}
                 >Bemutatkozás</NavLinks>
-                {isMenuDropDownOpen && <Menu />}
               </NavItem>
               <NavItem>
                 <NavLinks to='tools'
-                 //use mouseover event to show dropdown
                 smooth={true} 
                 duration={500} 
                 spy={true}
                 exact='true' 
                 offset={-80}
                 >Eszközeink</NavLinks>
-                {isMenuDropDownOpen && <Menu />}
               </NavItem>
               <NavItem>
                 <NavLinks to='products'
-                ref={dropdownRef}
-                onMouseOver={() => setMenuDropDownOpen(true)} //use mouseover event to show dropdown
                 smooth={true} 
                 duration={500} 
                 spy={true}
                 exact='true' 
                 offset={-80}
                 >Termékeink</NavLinks>
-                {isMenuDropDownOpen && <Menu />}
               </NavItem>
               <NavItem>
                 <NavLinks to='services'
-                ref={dropdownRef}
-                onMouseOver={() => setMenuDropDownOpen(true)} //use mouseover event to show dropdown
                 smooth={true} 
                 duration={500} 
                 spy={true}
                 exact='true' 
                 offset={-80}
                 >Utómunkák</NavLinks>
-                {isMenuDropDownOpen && <Menu />}
               </NavItem>
               <NavItem>
                 <NavLinks to='join'
-                ref={dropdownRef}
-                onMouseOver={() => setMenuDropDownOpen(true)} //use mouseover event to show dropdown
                 smooth={true} 
                 duration={500} 
                 spy={true}
                 exact='true' 
                 offset={-80}
                 >Csatlakozz</NavLinks>
-                {isMenuDropDownOpen && <Menu />}
               </NavItem>
             </NavMenu>
             <NavBtn>
