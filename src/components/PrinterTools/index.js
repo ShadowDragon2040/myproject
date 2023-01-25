@@ -45,7 +45,9 @@ const PrinterTools = () => {
               left: "50%",
               transform: "translate(-50%,-50%)",
               visibility: LeftHovered ? 'hidden' : 'visible',
-              textAlign: 'center'
+              textAlign: 'center',
+              textShadow: '0 0 25px black',
+              zIndex: 1
             }}>Ender 3 V2</TopLine>
             <ImgWrap>
             <Link to="/Ender">
@@ -59,7 +61,8 @@ const PrinterTools = () => {
                     width: "100%",
                     height: "auto",
                     cursor: 'pointer',
-                    position: 'relative'
+                    position: 'relative',
+                    zIndex: 0
                   }}
                 />
               </Link>
@@ -72,7 +75,9 @@ const PrinterTools = () => {
               left: "50%",
               transform: "translate(-50%,-50%)",
               visibility: RightHovered ? 'hidden' : 'visible',
-              textAlign: 'center'
+              textAlign: 'center',
+              textShadow: '0 0 25px black',
+              zIndex: 1
             }}>Anycubic photon mono</TopLine>
               <ImgWrap>
               <Link to="/Anycubic">
@@ -86,7 +91,8 @@ const PrinterTools = () => {
                     width: "100%",
                     height: "auto",
                     cursor: 'pointer',
-                    position: 'relative'
+                    position: 'relative',
+                    zIndex: 0
                   }}
                 />
               </Link>
