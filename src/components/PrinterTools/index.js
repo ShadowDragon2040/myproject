@@ -46,6 +46,7 @@ const PrinterTools = () => {
               transform: "translate(-50%,-50%)",
               visibility: LeftHovered ? 'hidden' : 'visible',
               textAlign: 'center',
+              textShadow: "4px 2px 2px black",
               zIndex: 1
             }}>Ender 3 V2</TopLine>
             <ImgWrap>
@@ -73,6 +74,7 @@ const PrinterTools = () => {
               transform: "translate(-50%,-50%)",
               visibility: RightHovered ? 'hidden' : 'visible',
               textAlign: 'center',
+              textShadow: "4px 2px 2px black",
               zIndex: 1
             }}>Anycubic photon mono</TopLine>
               <ImgWrap>
