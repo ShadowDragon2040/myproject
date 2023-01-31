@@ -38,7 +38,7 @@ const PrinterTools = () => {
         <Heading lightText={false}>A nyomtatóink</Heading>
         <InfoWrapper>
           <InfoRow  imgStart={false} >
-            <Column1>
+            <Column1 style={{position: 'relative'}}>
             <TopLine style={{
               position: "absolute",
               top: "50%",
@@ -46,7 +46,6 @@ const PrinterTools = () => {
               transform: "translate(-50%,-50%)",
               visibility: LeftHovered ? 'hidden' : 'visible',
               textAlign: 'center',
-              textShadow: '0 0 25px black',
               zIndex: 1
             }}>Ender 3 V2</TopLine>
             <ImgWrap>
@@ -61,14 +60,12 @@ const PrinterTools = () => {
                     width: "100%",
                     height: "auto",
                     cursor: 'pointer',
-                    position: 'relative',
-                    zIndex: 0
                   }}
                 />
               </Link>
             </ImgWrap>
             </Column1>
-             <Column2>
+            <Column2 style={{position: 'relative'}}>
              <TopLine style={{
               position: "absolute",
               top: "50%",
@@ -76,7 +73,6 @@ const PrinterTools = () => {
               transform: "translate(-50%,-50%)",
               visibility: RightHovered ? 'hidden' : 'visible',
               textAlign: 'center',
-              textShadow: '0 0 25px black',
               zIndex: 1
             }}>Anycubic photon mono</TopLine>
               <ImgWrap>
@@ -91,8 +87,6 @@ const PrinterTools = () => {
                     width: "100%",
                     height: "auto",
                     cursor: 'pointer',
-                    position: 'relative',
-                    zIndex: 0
                   }}
                 />
               </Link>
