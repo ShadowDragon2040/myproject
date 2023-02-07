@@ -26,18 +26,18 @@ export const InfoWrapper =styled.div`
  
 `
 
-export const InfoRow=styled.div`
-    display:grid;
-    grid-auto-columns: minmax(auto, 1fr);
-    align-items: center;
-    
-    grid-template-areas: ${({imgStart})=>(imgStart? `'col2 col1'`:`'col1 col2'`)};  
-    
-    @media screen and (max-width:768px) {
-    grid-template-areas: ${({imgStart})=>(imgStart? `'col1' 'col2'`:`'col2 col2' 'col1 col1'`)};
-    
+export const InfoRow = styled.div`
+  display: grid;
+  grid-template-columns: repeat(4, minmax(auto, 1fr));
+  align-items: center;
+  grid-gap: 1rem;
 
-    }
+  grid-template-areas: ${({imgStart}) => (imgStart ? `"col2 col1 col4 col3"` : `"col1 col2 col3 col4"`)};  
+
+  @media screen and (max-width: 768px) {
+    grid-template-columns: 1fr;
+    grid-template-areas: ${({imgStart}) => (imgStart ? `"col2" "col1" "col4" "col3"` : `"col1" "col2" "col3" "col4"`)};
+  }
 `
 
 export const Column1 = styled.div`
@@ -51,6 +51,18 @@ export const Column2 = styled.div`
     padding: 0 15px;
     grid-area: col2;
     
+`
+export const Column3 = styled.div`
+    margin-bottom: 15px;
+    padding: 0 15px;
+    grid-area: col3;
+
+`
+export const Column4 = styled.div`
+    margin-bottom: 15px;
+    padding: 0 15px;
+    grid-area: col4;
+
 `
 export const TextWrapper=styled.div`
     max-width: 540px;

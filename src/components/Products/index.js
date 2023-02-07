@@ -1,16 +1,17 @@
 import React from 'react'
-import {Button} from '../ButtonElement'
+import { Link } from 'react-router-dom';
 import {
 InfoContainer,
 InfoWrapper,
 InfoRow,
 Column1,
 Column2,
+Column3,
+Column4,
 TextWrapper,
 TopLine,
 Heading,
 Subtitle,
-BtnWrap,
 ImgWrap,
 Img
 } from './InfoElements'
@@ -36,39 +37,66 @@ const Products = () => {
     <>
     
       <InfoContainer  lightBg={false} id={'products'} >
-        <Heading lightText={false}>A Cégünkről</Heading>
+        <Heading lightText={false}>Termékeink</Heading>
         <InfoWrapper>
           <InfoRow  imgStart={false} >
+
             <Column1>
             <TextWrapper> 
-             <TopLine></TopLine>
+             <TopLine>Szemüvegek</TopLine>
+              <Link to="/Szemuvegek">
+                <ImgWrap>
+                  <Img src={require('../../images/industar-kft-front.jpg')} alt={'cég'}/>
+                </ImgWrap>
+              </Link>
               <Subtitle darkText={true}>
-              Cégünket 1962-ben id. Török Pál alapította, aki magánvállalkozóként kovácsolással, díszkovácsolással foglalkozott.Jelenlegi tevékenységünk ifj.Török Pál vállalkozásának megkezdésével indult 1976-ban, majd kötőelem gyártással bővült és Török Sándor csatlakozásával 1980-tól már családi vállalkozássá fejlődött, és beindult a gépkocsimotor és karosszéria javítás.<br/> Az akkori karosszéria és alkatrész hiány szükségessé tette, hogy saját gyártású karosszéria-elemeket építsenek be a gépkocsikba. A karosszériaelemek gyártása 1985-ben kezdődött. Az alkalmazotti létszám akkor 5 fő volt.A piaci helyzet helyes felmérésével 1993-ban megkezdődtek a kipufugóelemek gyártásfejlesztései. <br/>A termelés bővítéséhez szükségessé vált egy nagyobb telephely. 
-
+                A 3D nyomtatással előálított szemüvegeink teljesen testreszabhatóak, különböző anyagok, színek és stílusokban elérhetőek.
               </Subtitle>
-              <BtnWrap>
-                <Button to='company'
-                smooth={true}
-                duration={500}
-                spy={true}
-                exact="true"
-                offset={-80}
-                /* primary={primary? 1:0}
-                dark={dark ? 1:0} 
-                 dark2={dark2 ? 1:0} */
-                dark={true}
-                primary={true}
-                darkText={true}
-                >Bövebben</Button>
-              </BtnWrap>
             </TextWrapper>
             </Column1>
-             <Column2>
-             
-              <ImgWrap>
-              <Img src={require('../../images/industar-kft-front.jpg')} alt={'cég'}/>
-              </ImgWrap>
-            </Column2> 
+
+            <Column2>
+            <TextWrapper> 
+             <TopLine>Figurák</TopLine>
+              <Link to="/Figurak">
+                <ImgWrap>
+                  <Img src={require('../../images/industar-kft-front.jpg')} alt={'cég'}/>
+                </ImgWrap>
+              </Link>
+              <Subtitle darkText={true}>
+                A 3D nyomtatással előálított szemüvegeink teljesen testreszabhatóak, különböző anyagok, színek és stílusokban elérhetőek.
+              </Subtitle>
+            </TextWrapper>
+            </Column2>
+
+            <Column3>
+            <TextWrapper> 
+             <TopLine>Otthoni díszek</TopLine>
+              <Link to="/Otthoni_diszek">
+                <ImgWrap>
+                  <Img src={require('../../images/industar-kft-front.jpg')} alt={'cég'}/>
+                </ImgWrap>
+              </Link>
+              <Subtitle darkText={true}>
+                A 3D nyomtatással előálított szemüvegeink teljesen testreszabhatóak, különböző anyagok, színek és stílusokban elérhetőek.
+              </Subtitle>
+            </TextWrapper>
+            </Column3>
+
+            <Column4>
+            <TextWrapper> 
+             <TopLine>Alkatrészek</TopLine>
+              <Link to="/Alkatreszek">
+                <ImgWrap>
+                  <Img src={require('../../images/industar-kft-front.jpg')} alt={'cég'}/>
+                </ImgWrap>
+              </Link>
+              <Subtitle darkText={true}>
+                A 3D nyomtatással előálított szemüvegeink teljesen testreszabhatóak, különböző anyagok, színek és stílusokban elérhetőek.
+              </Subtitle>
+            </TextWrapper>
+            </Column4>
+            
           </InfoRow>
         </InfoWrapper>
       </InfoContainer>

@@ -26,8 +26,8 @@ export const homeObjOne={
   dark:true,
   primary:true,
   darkText:true,
-
 };
+
 const PrinterTools = () => {
   const [LeftHovered, setLeftHovered] = useState(false);
   const [RightHovered, setRightHovered] = useState(false);
@@ -60,7 +60,6 @@ const PrinterTools = () => {
                     filter: LeftHovered ? "blur(0px)" : "blur(3px)",
                     width: "100%",
                     height: "auto",
-                    cursor: 'pointer',
                   }}
                 />
               </Link>
@@ -88,7 +87,6 @@ const PrinterTools = () => {
                     filter: RightHovered ? "blur(0px)" : "blur(3px)",
                     width: "100%",
                     height: "auto",
-                    cursor: 'pointer',
                   }}
                 />
               </Link>
