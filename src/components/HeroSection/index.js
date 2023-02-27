@@ -21,7 +21,7 @@ const HeroSection = () => {
   return (
     <HeroContainer>
     <HeroContent>
-        <HeroH1>3D Hobbinyomtatás és Tervezés</HeroH1>
+        <HeroH1>3D Hobbinyomtatás</HeroH1>
         <HeroP>Képzeld el, mi megvalósítjuk!</HeroP>
         <HeroBtnWrapped>
             <Button 

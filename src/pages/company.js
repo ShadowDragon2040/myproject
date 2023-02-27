@@ -14,8 +14,6 @@ const Company = () => {
      <Sidebar isOpen={isOpen} toggle={toggle}/>
       <Navbar toggle={toggle}/>
     <Footer/>
-
-    
     </>
   )
 }

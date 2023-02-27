@@ -26,18 +26,22 @@ const Footer = () => {
             <FooterLinksContainer>
                 <FooterLinksWrapper>
                     <FooterLinkItems>
-                        <FooterLinkTitle>sdfs</FooterLinkTitle>
+                        <FooterLinkTitle>Csatlakozz</FooterLinkTitle>
                             <FooterLink to="/signin">About us</FooterLink>
-                        
                     </FooterLinkItems>
                 </FooterLinksWrapper>
             </FooterLinksContainer>
             <SocialMedia>
                 <SocialMediaWrap>
                     <SocialLogo to='/' onClick={toggleHome}>
-                        Industar
+                        PrintFusion
                     </SocialLogo>
-                     <WebsiteRights>Industar {new Date().getFullYear()}</WebsiteRights>
+                     <WebsiteRights>PrintFusion {new Date().getFullYear()}</WebsiteRights>
+                      <SocialIcons>
+                        <SocialIconLink href="/" target="_blank"
+                        aria-label="Facebook"></SocialIconLink>
+                        <FaFacebook/>
+                      </SocialIcons>
                       <SocialIcons>
                         <SocialIconLink href="/" target="_blank"
                         aria-label="Facebook"></SocialIconLink>

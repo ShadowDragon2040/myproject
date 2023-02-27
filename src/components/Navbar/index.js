@@ -58,9 +58,9 @@ const Navbar = ({toggle}) => {
                 smooth={true} 
                 duration={500} 
                 spy={true}
-                exact='true' 
+                exact='true'
                 offset={-80}
-                >Eszközeink</NavLinks>
+                >Nyomtatóink</NavLinks>
               </NavItem>
               <NavItem>
                 <NavLinks to='products'
