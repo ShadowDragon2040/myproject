@@ -23,7 +23,7 @@ export const InfoWrapper =styled.div`
     background-repeat:no-repeat;
     background-position:center;
     background-size:100%; */
- 
+
 `
 
 export const InfoRow = styled.div`
@@ -39,7 +39,6 @@ export const InfoRow = styled.div`
     grid-template-areas: ${({imgStart}) => (imgStart ? `"col2" "col1" "col4" "col3"` : `"col1" "col2" "col3" "col4"`)};
   }
 `
-
 export const Column1 = styled.div`
     margin-bottom: 15px;
     padding: 0 15px;
@@ -81,7 +80,6 @@ export const TopLine=styled.p`
     
 `
 export const Heading =styled.h1`
-    margin-bottom: 24px;
     font-size: 48px;
     line-height: 1.1;
     font-weight: 600;
@@ -110,6 +108,13 @@ export const BtnWrap=styled.div`
 export const ImgWrap=styled.div`
     max-width: 555px;
     height: 100%;
+    transition: all 0.2s ease-in-out;
+
+    &:hover{
+        transform: scale(1.02);
+        transition: all 0.2s ease-in-out;
+        cursor: pointer;
+    }
 `
 export const Img =styled.img`
     

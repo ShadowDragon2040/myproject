@@ -35,12 +35,10 @@ const Products = () => {
   
   return (
     <>
-    
       <InfoContainer  lightBg={false} id={'products'} >
         <Heading lightText={false}>Termékeink</Heading>
         <InfoWrapper>
           <InfoRow  imgStart={false} >
-
             <Column1>
             <TextWrapper> 
              <TopLine>Szemüvegek</TopLine>

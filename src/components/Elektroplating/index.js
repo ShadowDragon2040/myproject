@@ -10,7 +10,7 @@ ImgWrap,
 TopLine,
 Img,
 Subtitle
-} from './EnderElements'
+} from './ElektroplatingElements'
 
 export const homeObjOne={
   id:'tools',
@@ -27,11 +27,11 @@ export const homeObjOne={
   darkText:true,
 };
 
-const Ender = () => {
+const Elektroplating = () => {
   return (
     <>
-      <InfoContainer  lightBg={false} id={'Ender'} >
-        <Heading lightText={false}>Ender 3 V2</Heading>
+      <InfoContainer  lightBg={false} id={'Elektroplating'} >
+        <Heading lightText={false}>Elektroplating</Heading>
         <InfoWrapper>
           <InfoRow  imgStart={false} >
             <Column1 style={{position: 'relative'}}>
@@ -91,4 +91,4 @@ const Ender = () => {
   )
 }
 
-export default Ender
+export default Elektroplating

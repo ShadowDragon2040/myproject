@@ -5,6 +5,8 @@ import SigninPage from './pages/signin';
 import Company from './pages/company';
 import EnderPage from './pages/Ender';
 import AnycubicPage from './pages/Anycubic';
+import Elektroplating from './components/Elektroplating';
+import Paint from './components/Paint';
 
 function App() {
   return (
@@ -15,6 +17,8 @@ function App() {
         <Route path="/company" component={Company} exact />
         <Route path="/Ender" component={EnderPage} exact />
         <Route path="/Anycubic" component={AnycubicPage} exact />
+        <Route path="/Elektroplating" component={Elektroplating} exact />
+        <Route path="/Paint" component={Paint} exact />
       </Switch>
     </Router>
   );

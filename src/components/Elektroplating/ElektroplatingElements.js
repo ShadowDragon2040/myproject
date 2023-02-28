@@ -60,17 +60,20 @@ export const TextWrapper=styled.div`
 `
 export const TopLine=styled.p`
     color: #01bf71;
-    font-size: 30px;
+    font-size: 16px;
+    line-height: 16px;
     font-weight: 700;
     letter-spacing: 1.4px;
     text-transform: uppercase;
     margin-bottom: 16px;
+    
 `
 export const Heading =styled.h1`
+    margin-bottom: 24px;
     font-size: 48px;
     line-height: 1.1;
     font-weight: 600;
-    padding-top:50px;
+    padding-top: 100px;
     color: #f7f8fa;
     text-align:center;
     @media screen and (max-width:480px) {
@@ -90,7 +93,7 @@ export const Subtitle=styled.p`
 `
 export const BtnWrap=styled.div`
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
 `
 export const ImgWrap=styled.div`
     max-width: 555px;

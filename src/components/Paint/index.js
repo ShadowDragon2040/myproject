@@ -10,7 +10,7 @@ ImgWrap,
 TopLine,
 Img,
 Subtitle
-} from './EnderElements'
+} from './PaintElements'
 
 export const homeObjOne={
   id:'tools',
@@ -27,11 +27,11 @@ export const homeObjOne={
   darkText:true,
 };
 
-const Ender = () => {
+const Paint = () => {
   return (
     <>
-      <InfoContainer  lightBg={false} id={'Ender'} >
-        <Heading lightText={false}>Ender 3 V2</Heading>
+      <InfoContainer  lightBg={false} id={'Paint'} >
+        <Heading lightText={false}>Festés</Heading>
         <InfoWrapper>
           <InfoRow  imgStart={false} >
             <Column1 style={{position: 'relative'}}>
@@ -91,4 +91,4 @@ const Ender = () => {
   )
 }
 
-export default Ender
+export default Paint

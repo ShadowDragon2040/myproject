@@ -1,5 +1,6 @@
 import React from 'react'
 import Icon1 from '../../images/svg-1.svg'
+import { Link } from 'react-router-dom';
 import { 
   ServicesContainer,
   ServicesCard,
@@ -15,21 +16,27 @@ const Services = () => {
     <ServicesContainer id="services">
         <ServicesH1>Utómunkák</ServicesH1>
         <ServicesWrapper>
+            <Link to={'Paint'}>
             <ServicesCard>
                 <ServicesIcon src={Icon1}/>
-                <ServicesH2>Kézi Festés</ServicesH2>
+                <ServicesH2>Festés</ServicesH2>
                 <ServicesP></ServicesP>
             </ServicesCard>
-            <ServicesCard>
-                <ServicesIcon src={Icon1}/>
-                <ServicesH2>Spray Festés</ServicesH2>
-                <ServicesP></ServicesP>
-            </ServicesCard>
+            </Link>
+            <Link to={'Elektroplating'}>
             <ServicesCard>
                 <ServicesIcon src={Icon1}/>
                 <ServicesH2>Elektroplating</ServicesH2>
                 <ServicesP></ServicesP>
             </ServicesCard>
+            </Link>
+            <Link to={'Elektroplating'}>
+            <ServicesCard>
+                <ServicesIcon src={Icon1}/>
+                <ServicesH2>Elektroplating</ServicesH2>
+                <ServicesP></ServicesP>
+            </ServicesCard>
+            </Link>
         </ServicesWrapper>
     </ServicesContainer>
   )

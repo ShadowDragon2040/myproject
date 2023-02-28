@@ -1,5 +1,4 @@
 import React from 'react'
-import {Button} from '../ButtonElement'
 import {
 InfoContainer,
 InfoWrapper,
@@ -10,7 +9,6 @@ TextWrapper,
 TopLine,
 Heading,
 Subtitle,
-BtnWrap,
 ImgWrap,
 Img
 } from './InfoElements'
@@ -43,28 +41,11 @@ const InfoSection = () => {
             <TextWrapper> 
              <TopLine></TopLine>
               <Subtitle darkText={true}>
-              Cégünket 1962-ben id. Török Pál alapította, aki magánvállalkozóként kovácsolással, díszkovácsolással foglalkozott.Jelenlegi tevékenységünk ifj.Török Pál vállalkozásának megkezdésével indult 1976-ban, majd kötőelem gyártással bővült és Török Sándor csatlakozásával 1980-tól már családi vállalkozássá fejlődött, és beindult a gépkocsimotor és karosszéria javítás.<br/> Az akkori karosszéria és alkatrész hiány szükségessé tette, hogy saját gyártású karosszéria-elemeket építsenek be a gépkocsikba. A karosszériaelemek gyártása 1985-ben kezdődött. Az alkalmazotti létszám akkor 5 fő volt.A piaci helyzet helyes felmérésével 1993-ban megkezdődtek a kipufugóelemek gyártásfejlesztései. <br/>A termelés bővítéséhez szükségessé vált egy nagyobb telephely. 
-
+              A cégnél hisszük hogy a képzelet a határ, a 3D nyomtatási technológiával ez meg is oldható. Mindenkinek tudunk valamit ajánlani és akinek valami egyedi kell, azt reméljük hogy biztosítani tudjuk. Nézzen körbe az oldalunkon és válassza ki ami önnek tetszik, ha nem találja külde el e-mail-ben mit szeretne. 3D nyomtatáson kívűl foglalkozunk festéssel és elektroplaing-el. 
               </Subtitle>
-              <BtnWrap>
-                <Button to='company'
-                smooth={true}
-                duration={500}
-                spy={true}
-                exact="true"
-                offset={-80}
-                /* primary={primary? 1:0}
-                dark={dark ? 1:0} 
-                 dark2={dark2 ? 1:0} */
-                dark={true}
-                primary={true}
-                darkText={true}
-                >Bövebben</Button>
-              </BtnWrap>
             </TextWrapper>
             </Column1>
              <Column2>
-             
               <ImgWrap>
               <Img src={require('../../images/industar-kft-front.jpg')} alt={'cég'}/>
               </ImgWrap>
