@@ -16,21 +16,21 @@ const Services = () => {
     <ServicesContainer id="services">
         <ServicesH1>Utómunkák</ServicesH1>
         <ServicesWrapper>
-            <Link to={'Paint'}>
+            <Link to={'PaintPage'}>
             <ServicesCard>
                 <ServicesIcon src={Icon1}/>
                 <ServicesH2>Festés</ServicesH2>
                 <ServicesP></ServicesP>
             </ServicesCard>
             </Link>
-            <Link to={'Elektroplating'}>
+            <Link to={'ElektroplatingPage'}>
             <ServicesCard>
                 <ServicesIcon src={Icon1}/>
                 <ServicesH2>Elektroplating</ServicesH2>
                 <ServicesP></ServicesP>
             </ServicesCard>
             </Link>
-            <Link to={'Elektroplating'}>
+            <Link to={'ElektroplatingPage'}>
             <ServicesCard>
                 <ServicesIcon src={Icon1}/>
                 <ServicesH2>Elektroplating</ServicesH2>
