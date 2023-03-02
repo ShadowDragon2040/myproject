@@ -80,15 +80,6 @@ const Navbar = ({toggle}) => {
                 offset={-80}
                 >Utómunkák</NavLinks>
               </NavItem>
-              <NavItem>
-                <NavLinks to='join'
-                smooth={true} 
-                duration={500} 
-                spy={true}
-                exact='true' 
-                offset={-80}
-                >Csatlakozz</NavLinks>
-              </NavItem>
             </NavMenu>
             <NavBtn>
               <NavBtnLink to='signin'>Sign In</NavBtnLink>

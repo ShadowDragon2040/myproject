@@ -62,7 +62,7 @@ const Products = () => {
                 </ImgWrap>
               </Link>
               <Subtitle darkText={true}>
-                A 3D nyomtatással előálított szemüvegeink teljesen testreszabhatóak, különböző anyagok, színek és stílusokban elérhetőek.
+                A választékból vannak kis figurák asztali játékokhoz vagy nagyobb figurák asztali dísznek vagy polci dísznek.
               </Subtitle>
             </TextWrapper>
             </Column2>
@@ -76,7 +76,7 @@ const Products = () => {
                 </ImgWrap>
               </Link>
               <Subtitle darkText={true}>
-                A 3D nyomtatással előálított szemüvegeink teljesen testreszabhatóak, különböző anyagok, színek és stílusokban elérhetőek.
+                Asztali díszek, fali díszek vagy mutatós polcra rakható díszek hogy érdekesebb legyen az otthoni légkör.
               </Subtitle>
             </TextWrapper>
             </Column3>
@@ -90,7 +90,7 @@ const Products = () => {
                 </ImgWrap>
               </Link>
               <Subtitle darkText={true}>
-                A 3D nyomtatással előálított szemüvegeink teljesen testreszabhatóak, különböző anyagok, színek és stílusokban elérhetőek.
+                Kissebb alkatrészek, fedőlapok, álványok elkészítésére, szerkezetek elfedésére is alkalmas a 3D nyomtatás.
               </Subtitle>
             </TextWrapper>
             </Column4>

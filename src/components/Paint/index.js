@@ -40,17 +40,17 @@ const Paint = () => {
                 </ImgWrap>
             </Column1>
             <Column2 style={{position: 'relative'}}>
-            <TopLine>Technológia</TopLine>
+            <TopLine>Spray festés</TopLine>
                 <Subtitle darkText={true}>
-                Az Ender 3 V2 egy FDM 3D nyomtató, amely folyékony műanyag felhasználásával rétegről rétegre felépíti a kívánt tárgyat.
+                Spray festéssel egyszínű egyenletes festékréteget tudunk készíteni, ajánlott a burkolati elemeknél és az otthoni díszeknél.
                 </Subtitle>
             </Column2>
           </InfoRow>
           <InfoRow  imgStart={false} >
             <Column1 style={{position: 'relative'}}>
-            <TopLine>Méretek</TopLine>
+            <TopLine>Kézi festés</TopLine>
                 <Subtitle darkText={true}>
-                A belső maximum nyomtatható méret: 22cm x 22cm x 25cm.
+                Kézi festéssel a figurákat bábúkat festjük le, az apró részleteket kiemeli és megtartja, a részletességtől fűggően eltérő árakat adunk.
                 </Subtitle>
             </Column1>
             <Column2 style={{position: 'relative'}}>
