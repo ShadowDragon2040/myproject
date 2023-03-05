@@ -12,25 +12,30 @@ import {
  } from './ServicesElements'
 
 const Services = () => {
+
+  function handleClick(event) {
+    window.scrollTo({top:0});     
+  }
+
   return (
     <ServicesContainer id="services">
         <ServicesH1>Utómunkák</ServicesH1>
         <ServicesWrapper>
-            <Link to={'PaintPage'}>
+            <Link onClick={handleClick} to={'PaintPage'}>
             <ServicesCard>
                 <ServicesIcon src={Icon1}/>
                 <ServicesH2>Festés</ServicesH2>
                 <ServicesP></ServicesP>
             </ServicesCard>
             </Link>
-            <Link to={'ElektroplatingPage'}>
+            <Link onClick={handleClick} to={'ElektroplatingPage'}>
             <ServicesCard>
                 <ServicesIcon src={Icon1}/>
                 <ServicesH2>Elektroplating</ServicesH2>
                 <ServicesP></ServicesP>
             </ServicesCard>
             </Link>
-            <Link to={'ElektroplatingPage'}>
+            <Link onClick={handleClick} to={'ElektroplatingPage'}>
             <ServicesCard>
                 <ServicesIcon src={Icon1}/>
                 <ServicesH2>Elektroplating</ServicesH2>

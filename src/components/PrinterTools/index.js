@@ -32,6 +32,10 @@ const PrinterTools = () => {
   const [LeftHovered, setLeftHovered] = useState(false);
   const [RightHovered, setRightHovered] = useState(false);
 
+  function handleClick(event) {
+  window.scrollTo({top:0});     
+}
+
   return (
     <>
       <InfoContainer  lightBg={false} id={'tools'} >
@@ -50,7 +54,7 @@ const PrinterTools = () => {
               zIndex: 1
             }}>Ender 3 V2</TopLine>
             <ImgWrap>
-            <Link to="/Ender">
+            <Link onClick={handleClick} to="/Ender">
                 <Img
                   src={require('../../images/industar-kft-front.jpg')}
                   alt={'cég'}
@@ -77,7 +81,7 @@ const PrinterTools = () => {
               zIndex: 1
             }}>Anycubic photon mono</TopLine>
               <ImgWrap>
-              <Link to="/Anycubic">
+              <Link onClick={handleClick} to="/Anycubic">
                 <Img
                   src={require('../../images/industar-kft-front.jpg')}
                   alt={'cég'}

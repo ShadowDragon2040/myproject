@@ -32,7 +32,11 @@ export const homeObjOne={
 
 };
 const Products = () => {
-  
+
+  function handleClick(event) {
+    window.scrollTo({top:0});     
+  }
+
   return (
     <>
       <InfoContainer  lightBg={false} id={'products'} >
@@ -42,7 +46,7 @@ const Products = () => {
             <Column1>
             <TextWrapper> 
              <TopLine>Szemüvegek</TopLine>
-              <Link to="/Szemuvegek">
+              <Link onClick={handleClick} to="/Szemuvegek">
                 <ImgWrap>
                   <Img src={require('../../images/industar-kft-front.jpg')} alt={'cég'}/>
                 </ImgWrap>
@@ -56,7 +60,7 @@ const Products = () => {
             <Column2>
             <TextWrapper> 
              <TopLine>Figurák</TopLine>
-              <Link to="/Figurak">
+              <Link onClick={handleClick} to="/Figurak">
                 <ImgWrap>
                   <Img src={require('../../images/industar-kft-front.jpg')} alt={'cég'}/>
                 </ImgWrap>
@@ -70,7 +74,7 @@ const Products = () => {
             <Column3>
             <TextWrapper> 
              <TopLine>Otthoni díszek</TopLine>
-              <Link to="/Otthoni_diszek">
+              <Link onClick={handleClick} to="/Otthoni_diszek">
                 <ImgWrap>
                   <Img src={require('../../images/industar-kft-front.jpg')} alt={'cég'}/>
                 </ImgWrap>
@@ -84,7 +88,7 @@ const Products = () => {
             <Column4>
             <TextWrapper> 
              <TopLine>Alkatrészek</TopLine>
-              <Link to="/Alkatreszek">
+              <Link onClick={handleClick} to="/Alkatreszek">
                 <ImgWrap>
                   <Img src={require('../../images/industar-kft-front.jpg')} alt={'cég'}/>
                 </ImgWrap>
