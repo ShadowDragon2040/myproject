@@ -4,6 +4,7 @@ import Navbar from '../components/Navbar'
 import Sidebar from '../components/Sidebar'
 import Paint from '../components/Paint'
 import Footer from '../components/Footer'
+import Gallery from '../components/Gallery'
 
 function PaintPage(){
 
@@ -17,6 +18,7 @@ function PaintPage(){
       <Sidebar isOpen={isOpen} toggle={toggle}/>
       <Navbar toggle={toggle}/>
       <Paint/>
+      <Gallery/>
       <Footer/>
       </>
     )
