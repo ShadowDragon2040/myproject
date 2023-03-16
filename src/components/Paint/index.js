@@ -50,7 +50,7 @@ const Paint = () => {
             <Column1 style={{position: 'relative'}}>
             <TopLine>Kézi festés</TopLine>
                 <Subtitle darkText={true}>
-                Kézi festéssel a figurákat bábúkat festjük le, az apró részleteket kiemeli és megtartja, a részletességtől fűggően eltérő árakat adunk.
+                Kézi festéssel a figurákat és a bábúkat festjük le, a részleteket kiemeli és megtartja, a részletességtől fűggően eltérő árakat adunk.
                 </Subtitle>
             </Column1>
             <Column2 style={{position: 'relative'}}>
@@ -59,32 +59,7 @@ const Paint = () => {
                 </ImgWrap>
             </Column2>
           </InfoRow>
-          <InfoRow  imgStart={false} >
-            <Column1 style={{position: 'relative'}}>
-                <ImgWrap>
-                  <Img></Img>
-                </ImgWrap>
-            </Column1>
-            <Column2 style={{position: 'relative'}}>
-            <TopLine>PEI nyomtatólap</TopLine>
-                <Subtitle darkText={true}>
-                Kíváló nyomtatási felület amely erős tapadást biztosít és egyedi mintázatot ad.
-                </Subtitle>
-            </Column2>
-          </InfoRow>
-          <InfoRow  imgStart={false} >
-            <Column1 style={{position: 'relative'}}>
-            <TopLine>Felbontás</TopLine>
-                <Subtitle darkText={true}>
-                A minimális rétegmagasság 0,1mm és a maximális rétegmagasság 0,4mm.
-                </Subtitle>
-            </Column1>
-            <Column2 style={{position: 'relative'}}>
-                <ImgWrap>
-                  <Img></Img>
-                </ImgWrap>
-            </Column2>
-          </InfoRow>
+          <Heading lightText={false}>Galléria</Heading>
         </InfoWrapper>
       </InfoContainer>
     </>
