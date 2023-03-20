@@ -34,7 +34,7 @@ export const slideStyles = styled.div`
     backgroundSize: "cover",
     backgroundPosition: "center",
 `
-export const LeftArrow = styled.div`
+export const leftArrow = styled.div`
     position: absolute;
     top: 50%;
     transform: translate(0, -50%);
@@ -44,7 +44,7 @@ export const LeftArrow = styled.div`
     z-Index: 1;
     cursor: pointer;
 `
-export const RightArrow = styled.div`
+export const rigthArrow = styled.div`
     position: absolute;
     top: 50%;
     transform: translate(0, -50%);

@@ -2,8 +2,8 @@ import { useState } from "react";
 import {
     sliderStyles,
     slideStyles,
-    rightArrowStyles,
-    leftArrowStyles,
+    rigthArrow,
+    leftArrow,
     dotsContainer,
     dotsStyles
 } from './GalleryElements';
@@ -30,8 +30,8 @@ const ImageSlider = ({ slides }) => {
 
   return (
     <sliderStyles>
-      <leftArrowStyles onClick={goToPrevious}>-</leftArrowStyles>
-      <rigthArrowStyles onClick={goToNext}>+</rigthArrowStyles>
+      <leftArrow onClick={goToPrevious}>-</leftArrow>
+      <rigthArrow onClick={goToNext}>+</rigthArrow>
       <div style={slideStylesWidthBackground}></div>
       <dotsContainer>
         {slides.map((slide, slideIndex) => (
