@@ -9,21 +9,58 @@ export const InfoContainer=styled.div`
 
     }
 `
+export const containerStyles = styled.div`
+    width: "500px",
+    height: "280px",
+    margin: "0 auto",
+`
+export const dotsContainer = styled.div`
+    display: flex;
+    justify-content: center;
+`
+export const dotsStyles = styled.div`
+    margin: 0 3px;
+    cursor: pointer;
+    fontSize: 20px;
+`
+export const sliderStyles = styled.div`
+    height: 100%;
+    position: relative;
+`
+export const slideStyles = styled.div`
+    width: "100%",
+    height: "100%",
+    borderRadius: "10px",
+    backgroundSize: "cover",
+    backgroundPosition: "center",
+`
+export const LeftArrow = styled.div`
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    left: 32px;
+    font-size: 32px;
+    color: #fff;
+    z-Index: 1;
+    cursor: pointer;
+`
+export const RightArrow = styled.div`
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    right: 32px;
+    font-size: 32px;
+    color: #fff;
+    z-Index: 1;
+    cursor: pointer;
+`
 export const InfoWrapper =styled.div`
+    width: 500px;
+    height: 280px;
+    margin: 0 auto;
     display: grid;
     z-index: 1;
-    height: 660px;
-    width:100%;
-    max-width: 1600px;
-    margin-right: auto;
-    margin-left:auto;
     padding:0 24px;
-    justify-content: center;
-    /* background-image: url(${require(`../../images/industar-kft-front.jpg`)});
-    background-repeat:no-repeat;
-    background-position:center;
-    background-size:100%; */
- 
 `
 
 export const InfoRow=styled.div`
