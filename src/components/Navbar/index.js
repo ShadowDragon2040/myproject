@@ -72,6 +72,15 @@ const Navbar = ({toggle}) => {
                 >Termékeink</NavLinks>
               </NavItem>
               <NavItem>
+                <NavLinks to='models'
+                smooth={true} 
+                duration={500} 
+                spy={true}
+                exact='true' 
+                offset={-80}
+                >Modellek</NavLinks>
+              </NavItem>
+              <NavItem>
                 <NavLinks to='services'
                 smooth={true} 
                 duration={500} 

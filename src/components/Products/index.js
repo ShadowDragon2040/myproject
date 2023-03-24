@@ -46,7 +46,7 @@ const Products = () => {
             <Column1>
             <TextWrapper> 
              <TopLine>Szemüvegek</TopLine>
-              <Link onClick={handleClick} to="/Szemuvegek">
+              <Link onClick={handleClick} to="/Szemuveg">
                 <ImgWrap>
                   <Img src={require('../../images/industar-kft-front.jpg')} alt={'cég'}/>
                 </ImgWrap>
@@ -60,7 +60,7 @@ const Products = () => {
             <Column2>
             <TextWrapper> 
              <TopLine>Figurák</TopLine>
-              <Link onClick={handleClick} to="/Figurak">
+              <Link onClick={handleClick} to="/Figura">
                 <ImgWrap>
                   <Img src={require('../../images/industar-kft-front.jpg')} alt={'cég'}/>
                 </ImgWrap>
@@ -74,7 +74,7 @@ const Products = () => {
             <Column3>
             <TextWrapper> 
              <TopLine>Otthoni díszek</TopLine>
-              <Link onClick={handleClick} to="/Otthoni_diszek">
+              <Link onClick={handleClick} to="/Otthoni_disz">
                 <ImgWrap>
                   <Img src={require('../../images/industar-kft-front.jpg')} alt={'cég'}/>
                 </ImgWrap>
@@ -88,7 +88,7 @@ const Products = () => {
             <Column4>
             <TextWrapper> 
              <TopLine>Alkatrészek</TopLine>
-              <Link onClick={handleClick} to="/Alkatreszek">
+              <Link onClick={handleClick} to="/Alkatresz">
                 <ImgWrap>
                   <Img src={require('../../images/industar-kft-front.jpg')} alt={'cég'}/>
                 </ImgWrap>

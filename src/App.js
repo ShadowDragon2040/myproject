@@ -7,6 +7,7 @@ import EnderPage from './pages/Ender';
 import AnycubicPage from './pages/Anycubic';
 import ElektroplatingPage from './pages/ElektroplatingPage';
 import PaintPage from './pages/PaintPage';
+import SzemuvegPage from './pages/Szemuveg';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         <Route path="/Anycubic" component={AnycubicPage} exact />
         <Route path="/ElektroplatingPage" component={ElektroplatingPage} exact />
         <Route path="/PaintPage" component={PaintPage} exact />
+        <Route path="/SzemuvegPage" component={SzemuvegPage} exact />
       </Switch>
     </Router>
   );

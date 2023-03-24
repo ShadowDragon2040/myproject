@@ -7,6 +7,7 @@ import PrinterTools from '../components/PrinterTools'
 import Products from '../components/Products'
 import Services from '../components/Services'
 import Footer from '../components/Footer'
+import ModelSection from '../components/ModelSection'
 
 const Home = () => {
   const[isOpen,setIsOpen]=useState(false)
@@ -23,6 +24,7 @@ const Home = () => {
       <InfoSection />
       <PrinterTools/>
       <Products/>
+      <ModelSection/>
       <Services/>
       
       <Footer/>
