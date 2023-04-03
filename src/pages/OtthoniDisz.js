@@ -2,25 +2,24 @@ import React from 'react'
 import { useState } from 'react';
 import Navbar from '../components/Navbar'
 import Sidebar from '../components/Sidebar'
+import OtthoniDisz from '../components/OtthiniDisz';
 import Footer from '../components/Footer'
-import Szemuveg from '../components/Szemuveg';
 
-function SzemuvegPage(){
+function OtthoniDiszPage(){
 
   const[isOpen,setIsOpen]=useState(false)
 
   const toggle=()=>{
     setIsOpen(!isOpen)
   }
-  
     return(
       <>
       <Sidebar isOpen={isOpen} toggle={toggle}/>
       <Navbar toggle={toggle}/>
-      <Szemuveg/>
+      <OtthoniDisz/>
       <Footer/>
       </>
     )
 }
 
-export default SzemuvegPage
+export default OtthoniDiszPage

@@ -2,25 +2,24 @@ import React from 'react'
 import { useState } from 'react';
 import Navbar from '../components/Navbar'
 import Sidebar from '../components/Sidebar'
+import Figura from '../components/Figura';
 import Footer from '../components/Footer'
-import Szemuveg from '../components/Szemuveg';
 
-function SzemuvegPage(){
+function FiguraPage(){
 
   const[isOpen,setIsOpen]=useState(false)
 
   const toggle=()=>{
     setIsOpen(!isOpen)
   }
-  
     return(
       <>
       <Sidebar isOpen={isOpen} toggle={toggle}/>
       <Navbar toggle={toggle}/>
-      <Szemuveg/>
+      <Figura/>
       <Footer/>
       </>
     )
 }
 
-export default SzemuvegPage
+export default FiguraPage

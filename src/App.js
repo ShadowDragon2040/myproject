@@ -8,6 +8,9 @@ import AnycubicPage from './pages/Anycubic';
 import ElektroplatingPage from './pages/ElektroplatingPage';
 import PaintPage from './pages/PaintPage';
 import SzemuvegPage from './pages/Szemuveg';
+import FiguraPage from './pages/Figura';
+import OtthoniDiszPage from './pages/OtthoniDisz';
+import AlkatreszPage from './pages/Alkatresz';
 
 function App() {
   return (
@@ -21,9 +24,11 @@ function App() {
         <Route path="/ElektroplatingPage" component={ElektroplatingPage} exact />
         <Route path="/PaintPage" component={PaintPage} exact />
         <Route path="/SzemuvegPage" component={SzemuvegPage} exact />
+        <Route path="/FiguraPage" component={FiguraPage} exact />
+        <Route path="/OtthoniDiszPage" component={OtthoniDiszPage} exact />
+        <Route path="/AlkatreszPage" component={AlkatreszPage} exact />
       </Switch>
     </Router>
   );
 }
-
 export default App;
