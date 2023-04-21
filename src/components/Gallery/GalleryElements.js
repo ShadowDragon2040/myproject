@@ -1,3 +1,4 @@
+/*
 import styled from "styled-components";
 
 export const InfoContainer=styled.div`
@@ -143,3 +144,4 @@ export const Img =styled.img`
     width:100%;
     
 `
+*/
