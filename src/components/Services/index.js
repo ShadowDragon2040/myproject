@@ -5,10 +5,10 @@ import {
   ServicesContainer,
   ServicesCard,
   ServicesH1,
-  ServicesH2,
   ServicesIcon,
   ServicesP,
   ServicesWrapper,
+  TopLine
  } from './ServicesElements'
 
 const Services = () => {
@@ -24,21 +24,21 @@ const Services = () => {
             <Link onClick={handleClick} to={'PaintPage'}>
             <ServicesCard>
                 <ServicesIcon src={Icon1}/>
-                <ServicesH2>Festés</ServicesH2>
+                <TopLine>Festés</TopLine>
                 <ServicesP></ServicesP>
             </ServicesCard>
             </Link>
             <Link onClick={handleClick} to={'ElektroplatingPage'}>
             <ServicesCard>
                 <ServicesIcon src={Icon1}/>
-                <ServicesH2>Elektroplating</ServicesH2>
+                <TopLine>Elektroplating</TopLine>
                 <ServicesP></ServicesP>
             </ServicesCard>
             </Link>
-            <Link onClick={handleClick} to={'ElektroplatingPage'}>
+            <Link onClick={handleClick} to={'ModelltervezesPage'}>
             <ServicesCard>
                 <ServicesIcon src={Icon1}/>
-                <ServicesH2>Elektroplating</ServicesH2>
+                <TopLine>Modelltervezés</TopLine>
                 <ServicesP></ServicesP>
             </ServicesCard>
             </Link>

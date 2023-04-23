@@ -21,7 +21,7 @@ export const ServicesWrapper=styled.div`
     grid-template-columns: 1fr 1fr 1fr;
     align-items: center;
     grid-gap: 16px;
-    padding: 0 50px;
+    padding: 50px 0px;
 
     @media screen and (max-width: 1000px){
         grid-template-columns: 1fr 1fr;    
@@ -61,15 +61,26 @@ export const ServicesIcon=styled.img`
 `
 
 export const ServicesH1=styled.h1`
-    font-size: 2.5rem;
-    color: #fff;
-    margin-bottom: 64px;
+    font-size: 48px;
+    line-height: 1.1;
+    font-weight: 600;
+    padding-top:50px;
+    color: #f7f8fa;
+    text-align:center;
 
     @media screen and (max-width: 480px){
         font-size: 2rem;
     }
 `
-
+export const TopLine=styled.p`
+    color: #01bf71;
+    font-size: 16px;
+    line-height: 16px;
+    font-weight: 700;
+    letter-spacing: 1.4px;
+    text-transform: uppercase;
+    margin-bottom: 16px;
+`
 export const ServicesH2=styled.h2`
     font-size: 1rem;
     margin-bottom: 10px;
