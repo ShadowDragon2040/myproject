@@ -11,6 +11,7 @@ import SzemuvegPage from './pages/Szemuveg';
 import FiguraPage from './pages/Figura';
 import OtthoniDiszPage from './pages/OtthoniDisz';
 import AlkatreszPage from './pages/Alkatresz';
+import ModelltervezesPage from './pages/ModelltervezesPage';
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
         <Route path="/Ender" component={EnderPage} exact />
         <Route path="/Anycubic" component={AnycubicPage} exact />
         <Route path="/ElektroplatingPage" component={ElektroplatingPage} exact />
+        <Route path="/ModelltervezesPage" component={ModelltervezesPage} exact />
         <Route path="/PaintPage" component={PaintPage} exact />
         <Route path="/SzemuvegPage" component={SzemuvegPage} exact />
         <Route path="/FiguraPage" component={FiguraPage} exact />
