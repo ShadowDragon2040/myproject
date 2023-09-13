@@ -29,8 +29,10 @@ export const homeObjOne={
 };
 
 const PrinterTools = () => {
-  const [LeftHovered, setLeftHovered] = useState(false);
-  const [RightHovered, setRightHovered] = useState(false);
+  const [TopLeftHovered, setTopLeftHovered] = useState(false);
+  const [TopRightHovered, setTopRightHovered] = useState(false);
+  const [BottomLeftHovered, setBottomLeftHovered] = useState(false);
+  const [BottomRightHovered, setBottomRightHovered] = useState(false);
 
   function handleClick(event) {
   window.scrollTo({top:0});     
@@ -48,7 +50,7 @@ const PrinterTools = () => {
               top: "50%",
               left: "50%",
               transform: "translate(-50%,-50%)",
-              visibility: LeftHovered ? 'hidden' : 'visible',
+              visibility: TopLeftHovered ? 'hidden' : 'visible',
               textAlign: 'center',
               textShadow: "4px 2px 2px black",
               zIndex: 1
@@ -58,10 +60,10 @@ const PrinterTools = () => {
                 <Img
                   src={require('../../images/industar-kft-front.jpg')}
                   alt={'cég'}
-                  onMouseEnter={() => setLeftHovered(true)}
-                  onMouseLeave={() => setLeftHovered(false)}
+                  onMouseEnter={() => setTopLeftHovered(true)}
+                  onMouseLeave={() => setTopLeftHovered(false)}
                   style={{
-                    filter: LeftHovered ? "blur(0px)" : "blur(3px)",
+                    filter: TopLeftHovered ? "blur(0px)" : "blur(3px)",
                     width: "100%",
                     height: "auto",
                   }}
@@ -75,7 +77,7 @@ const PrinterTools = () => {
               top: "50%",
               left: "50%",
               transform: "translate(-50%,-50%)",
-              visibility: RightHovered ? 'hidden' : 'visible',
+              visibility: TopRightHovered ? 'hidden' : 'visible',
               textAlign: 'center',
               textShadow: "4px 2px 2px black",
               zIndex: 1
@@ -85,10 +87,67 @@ const PrinterTools = () => {
                 <Img
                   src={require('../../images/industar-kft-front.jpg')}
                   alt={'cég'}
-                  onMouseEnter={() => setRightHovered(true)}
-                  onMouseLeave={() => setRightHovered(false)}
+                  onMouseEnter={() => setTopRightHovered(true)}
+                  onMouseLeave={() => setTopRightHovered(false)}
                   style={{
-                    filter: RightHovered ? "blur(0px)" : "blur(3px)",
+                    filter: TopRightHovered ? "blur(0px)" : "blur(3px)",
+                    width: "100%",
+                    height: "auto",
+                  }}
+                />
+              </Link>
+              </ImgWrap>
+            </Column2>
+          </InfoRow>
+
+          <InfoRow  imgStart={false} >
+            <Column1 style={{position: 'relative'}}>
+            <TopLine style={{
+              position: "absolute",
+              top: "50%",
+              left: "50%",
+              transform: "translate(-50%,-50%)",
+              visibility: BottomLeftHovered ? 'hidden' : 'visible',
+              textAlign: 'center',
+              textShadow: "4px 2px 2px black",
+              zIndex: 1
+            }}>Carbon X1</TopLine>
+            <ImgWrap>
+            <Link onClick={handleClick} to="/Carbon X1">
+                <Img
+                  src={require('../../images/industar-kft-front.jpg')}
+                  alt={'cég'}
+                  onMouseEnter={() => setBottomLeftHovered(true)}
+                  onMouseLeave={() => setBottomLeftHovered(false)}
+                  style={{
+                    filter: BottomLeftHovered ? "blur(0px)" : "blur(3px)",
+                    width: "100%",
+                    height: "auto",
+                  }}
+                />
+              </Link>
+            </ImgWrap>
+            </Column1>
+            <Column2 style={{position: 'relative'}}>
+             <TopLine style={{
+              position: "absolute",
+              top: "50%",
+              left: "50%",
+              transform: "translate(-50%,-50%)",
+              visibility: BottomRightHovered ? 'hidden' : 'visible',
+              textAlign: 'center',
+              textShadow: "4px 2px 2px black",
+              zIndex: 1
+            }}>Anycubic photon mono</TopLine>
+              <ImgWrap>
+              <Link onClick={handleClick} to="/Anycubic">
+                <Img
+                  src={require('../../images/industar-kft-front.jpg')}
+                  alt={'cég'}
+                  onMouseEnter={() => setBottomRightHovered(true)}
+                  onMouseLeave={() => setBottomRightHovered(false)}
+                  style={{
+                    filter: BottomRightHovered ? "blur(0px)" : "blur(3px)",
                     width: "100%",
                     height: "auto",
                   }}
