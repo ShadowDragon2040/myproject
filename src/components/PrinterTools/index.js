@@ -111,7 +111,7 @@ const PrinterTools = () => {
               textAlign: 'center',
               textShadow: "4px 2px 2px black",
               zIndex: 1
-            }}>Carbon X1</TopLine>
+            }}>Bambu Carbon X1</TopLine>
             <ImgWrap>
             <Link onClick={handleClick} to="/Carbon X1">
                 <Img

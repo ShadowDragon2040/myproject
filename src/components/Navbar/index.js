@@ -15,7 +15,7 @@ import {
   NavBtnLink
  } from './NavbarElements';
 
- 
+
 
 const Navbar = ({toggle}) => {
   const [scrollNav, setScrollNav]= useState(false);
@@ -34,6 +34,7 @@ const Navbar = ({toggle}) => {
   const toggleHome=()=>{
     scroll.scrollToTop();
   }
+
   return (
     <>
     <IconContext.Provider value={{color:'#fff'}}>
@@ -91,7 +92,7 @@ const Navbar = ({toggle}) => {
               </NavItem>
             </NavMenu>
             <NavBtn>
-              <NavBtnLink to='signin'>Sign In</NavBtnLink>
+              <NavBtnLink to='shop'>Shop</NavBtnLink>
             </NavBtn>
           </NavbarContainer>
         </Nav>
