@@ -10,7 +10,7 @@ ImgWrap,
 TopLine,
 Img,
 Subtitle
-} from './PaintElements'
+} from '../TextElements'
 
 export const homeObjOne={
   id:'tools',

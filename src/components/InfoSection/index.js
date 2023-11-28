@@ -11,7 +11,7 @@ Heading,
 Subtitle,
 ImgWrap,
 Img
-} from './InfoElements'
+} from '../TextElements'
 
 export const homeObjOne={
   id:'about',

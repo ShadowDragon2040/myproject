@@ -10,7 +10,7 @@ ImgWrap,
 TopLine,
 Img,
 Subtitle
-} from './ElektroplatingElements'
+} from '../TextElements'
 
 export const homeObjOne={
   id:'tools',

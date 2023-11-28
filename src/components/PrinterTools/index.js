@@ -2,7 +2,7 @@ import React from 'react'
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import {
-InfoContainer,
+InfoContainer2,
 InfoWrapper,
 InfoRow,
 Column1,
@@ -11,7 +11,7 @@ TopLine,
 Heading,
 ImgWrap,
 Img
-} from './InfoElements'
+} from '../TextElements'
 
 export const homeObjOne={
   id:'tools',
@@ -40,7 +40,7 @@ const PrinterTools = () => {
 
   return (
     <>
-      <InfoContainer  lightBg={false} id={'tools'} >
+      <InfoContainer2  lightBg={false} id={'tools'} >
         <Heading lightText={false}>A nyomtatóink</Heading>
         <InfoWrapper>
           <InfoRow  imgStart={false} >
@@ -157,7 +157,7 @@ const PrinterTools = () => {
             </Column2>
           </InfoRow>
         </InfoWrapper>
-      </InfoContainer>
+      </InfoContainer2>
     </>
   )
 }

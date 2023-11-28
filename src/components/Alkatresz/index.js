@@ -2,15 +2,8 @@ import React from 'react'
 import {
 InfoContainer,
 InfoWrapper,
-InfoRow,
-Column1,
-Column2,
 Heading,
-ImgWrap,
-TopLine,
-Img,
-Subtitle
-} from './AlkatreszElements'
+} from '../TextElements'
 
 export const homeObjOne={
   id:'tools',

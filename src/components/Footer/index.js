@@ -15,7 +15,7 @@ import {
     SocialMediaWrap,
     SocialLogo,
     WebsiteRights
-} from './FooterElements'
+} from '../TextElements'
 const Footer = () => {
     const toggleHome=()=>{
         scroll.scrollToTop();

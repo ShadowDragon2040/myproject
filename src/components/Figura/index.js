@@ -3,14 +3,8 @@ import {
 InfoContainer,
 InfoWrapper,
 InfoRow,
-Column1,
-Column2,
-Heading,
-ImgWrap,
-TopLine,
-Img,
-Subtitle
-} from './FiguraElements'
+Heading
+} from '../TextElements'
 
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';

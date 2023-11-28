@@ -9,7 +9,7 @@ import {
   ServicesP,
   ServicesWrapper,
   TopLine
- } from './ServicesElements'
+ } from '../TextElements'
 
 const Services = () => {
 

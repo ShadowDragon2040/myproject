@@ -5,7 +5,7 @@ import {
     HeroContent,
     HeroH1,
     HeroP
- } from './HeroElements'
+ } from '../TextElements'
 
 const HeroSection = () => {
   return (

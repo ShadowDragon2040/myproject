@@ -12,6 +12,7 @@ import FiguraPage from './pages/Figura';
 import OtthoniDiszPage from './pages/OtthoniDisz';
 import AlkatreszPage from './pages/Alkatresz';
 import ModelltervezesPage from './pages/ModelltervezesPage';
+import ShopPage from './pages/ShopPage';
 
 function App() {
   return (
@@ -29,6 +30,7 @@ function App() {
         <Route path="/FiguraPage" component={FiguraPage} exact />
         <Route path="/OtthoniDiszPage" component={OtthoniDiszPage} exact />
         <Route path="/AlkatreszPage" component={AlkatreszPage} exact />
+        <Route path="/ShopPage" component={ShopPage} exact />
       </Switch>
     </Router>
   );

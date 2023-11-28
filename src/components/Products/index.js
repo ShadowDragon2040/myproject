@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import {
 InfoContainer,
 InfoWrapper,
-InfoRow,
+InfoRow2,
 Column1,
 Column2,
 Column3,
@@ -14,7 +14,7 @@ Heading,
 Subtitle,
 ImgWrap,
 Img
-} from './InfoElements'
+} from '../TextElements'
 
 export const homeObjOne={
   id:'products',
@@ -42,7 +42,7 @@ const Products = () => {
       <InfoContainer  lightBg={false} id={'products'} >
         <Heading lightText={false}>Termékeink</Heading>
         <InfoWrapper>
-          <InfoRow  imgStart={false} >
+          <InfoRow2  imgStart={false} >
             <Column1>
             <TextWrapper> 
              <TopLine>Szemüvegek</TopLine>
@@ -99,7 +99,7 @@ const Products = () => {
             </TextWrapper>
             </Column4>
             
-          </InfoRow>
+          </InfoRow2>
         </InfoWrapper>
       </InfoContainer>
     </>

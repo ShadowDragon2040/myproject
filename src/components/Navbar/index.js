@@ -13,7 +13,7 @@ import {
   NavLinks,
   NavBtn,
   NavBtnLink
- } from './NavbarElements';
+ } from '../TextElements';
 
 
 
@@ -92,7 +92,7 @@ const Navbar = ({toggle}) => {
               </NavItem>
             </NavMenu>
             <NavBtn>
-              <NavBtnLink to='shop'>Shop</NavBtnLink>
+              <NavBtnLink to='ShopPage'>Shop</NavBtnLink>
             </NavBtn>
           </NavbarContainer>
         </Nav>

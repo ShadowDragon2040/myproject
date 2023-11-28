@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import Carousel from 'react-bootstrap/Carousel';
 import image from "../../images/industar-kft-front.jpg";
 import 'bootstrap/dist/css/bootstrap.min.css';
-import {CarouselContainer} from './GalleryElements';
+import {CarouselContainer} from '../TextElements';
 
 function Gallery() {
   const [index, setIndex] = useState(0);
